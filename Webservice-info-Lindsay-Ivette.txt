@@ -1,0 +1,28 @@
+Se agregaron las clases Restful_api para utilizar los metodos http.
+Se agregaron las clases para crear el JWT (Json Web Token).
+Se agrego la Carpeta api, para la creacion de los metodos get que utilizarara la app movil, junto con su model.
+
+
+Rutas URL en localhost:
+
+Get de la membresia del usuario (colocar su id):
+http://localhost/webservice/api/membresia/find/id
+
+Get de todas las promociones, todas y por id:
+http://localhost/webservice/api/promociones
+http://localhost/webservice/api/membresia/find/id
+
+Get de todo el catalogo y clasificado por id de consola:
+http://localhost/webservice/api/catalogo
+http://localhost/webservice/api/catalogo/find/id
+
+Get de la informacion del usuario y nombre de usuario para inicio de session:
+http://localhost/webservice/api/usuario/info/id
+http://localhost/webservice/api/index/find/id
+
+Post para el token (solo mandara el payload del token, se eliminio el heat y el asignature para acortar digitos):
+http://localhost/webservice/api/token/login
+
+Para probar en produccion reemplazar el localhost y el nombre del proyecto (en este caso webservice) lo siguiente se conserva. Pueden comprobar los metodos en el host que se mando anteriormente.
+
+Hay que modificar el login para el post del token y probar si sirve con el login que ya tienen en la app web, asi solo se utilizaria un solo login.
